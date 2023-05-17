@@ -110,7 +110,7 @@ class Client {
                         System.out.println("Nao foi possivel conectar ao servidor.");
                     } //catch server2.2
                 } //if server2.2
-                else if (i == line.length()-1)  && !line.equals("bye"){ //se chegar no ultimo char sem entrar em algum if anterior, eh uma operacao invalida
+                else if (i == line.length() - 1 && !line.equals("bye")){ //se chegar no ultimo char sem entrar em algum if anterior, eh uma operacao invalida
                     System.out.println("Operacao invalida.");
                 }
             } //for
