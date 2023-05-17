@@ -7,7 +7,7 @@ class Client {
     public static void main(String[] args)
     {
         //descricao para o usuario
-        System.out.println("#CALCULADORA DISTRUIDA\n");
+        System.out.println("#CALCULADORA DISTRUIDA#\n");
         System.out.println("Operecoes Disponiveis (substitua x e y pelo valor desejado): \n Adicao: x+y \n Subtracao: x_y \n Multiplicacao: x*y \n Divisao: x/y \n Potenciacao: x^y \n Porcentagem: x%y \n Raiz quadrada: rx\n");
 
         Scanner sc = new Scanner(System.in);
@@ -110,7 +110,7 @@ class Client {
                         System.out.println("Nao foi possivel conectar ao servidor.");
                     } //catch server2.2
                 } //if server2.2
-                else if (i == line.length()-1){ //se chegar no ultimo char sem entrar em algum if anterior, eh uma operacao invalida
+                else if (i == line.length()-1)  && !line.equals("bye"){ //se chegar no ultimo char sem entrar em algum if anterior, eh uma operacao invalida
                     System.out.println("Operacao invalida.");
                 }
             } //for
