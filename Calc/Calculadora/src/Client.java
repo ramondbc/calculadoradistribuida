@@ -21,8 +21,7 @@ class Client {
             line = sc.nextLine(); // le input do usuario
             line = line.replaceAll("\\s", ""); // troca todos " " por ""
 
-            int i = 1; // iniciando i como 1 para for, para situacoes com numeros negativos
-            for (; i < line.length(); i++) { // for para checar cada char da String
+            for (int i = 0; i < line.length(); i++) { // for para checar cada char da String
                 if (line.charAt(i) == '+' || line.charAt(i) == '_' || line.charAt(i) == '*' || line.charAt(i) == '/') { // if para indentificar se conectara ao Server1
 
                     String ope = String.valueOf(line.charAt(i)); // salvando o char atual (que seria o operador) em uma String
@@ -81,8 +80,8 @@ class Client {
                         System.out.println("Nao foi possivel conectar ao servidor.");
                     } //catch server2.1
                 } //if server2.1
-                else if (i == 0 && line.charAt(0) == 'r') {//if separado para checar operacao de raiz que so envia 1 numero para o server2
-
+                else if (i == 0 && line.charAt(i) == 'r') {//if separado para checar operacao de raiz que so envia 1 numero para o server2
+                   
                     i = line.length(); // atualiza i para nao precisar continuar rodando o for
 
                     try (Socket socket = new Socket("localhost", 1243)) {//tenta conectar com o server2
