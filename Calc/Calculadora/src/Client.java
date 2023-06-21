@@ -7,8 +7,8 @@ class Client {
     public static void main(String[] args)
     {
         //descricao para o usuario
-        System.out.println("#CALCULADORA DISTRUIDA#\n");
-        System.out.println("Operecoes Disponiveis (substitua x e y pelo valor desejado): \n Adicao: x+y \n Subtracao: x_y \n Multiplicacao: x*y \n Divisao: x/y \n Potenciacao: x^y \n Porcentagem: x%y \n Raiz quadrada: rx\n");
+        System.out.println("#CALCULADORA DISTRIBUIDA#\n");
+        System.out.println("Operacoes Disponiveis (substitua x e y pelo valor desejado): \n Adicao: x+y \n Subtracao: x_y \n Multiplicacao: x*y \n Divisao: x/y \n Potenciacao: x^y \n Porcentagem: x%y \n Raiz quadrada: rx\n");
 
         Scanner sc = new Scanner(System.in);
         String line = null; //String onde ficara salvo o input do usuario
