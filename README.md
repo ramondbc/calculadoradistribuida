@@ -3,7 +3,7 @@
 > Disciplina: Sistemas Distribuidos<br>
 > Faculdade de Petrolina<br>
 > 8º Período<br>
-> Equipe: Jessica e Ramon
+> Equipe: Jessica Saldaña, Lucas Carvalho e Ramon Dias
 
 ## Descrições do projeto
 
@@ -25,6 +25,18 @@ O projeto é composto de três etapas. Um cliente e dois servidores.
     1) Potenciação: `x^y`
     1) Porcentagem: `x%y`
     1) Raiz quadrada: `rx`
+
+#### WebService
+- O WebService está diponível na port `8081`. E, recebe informações via path usando o "get".
+- Ele envia uma String, com os parametros, para o Servidor específico.
+- Operações disponíveis (substitua x e y pelo valor desejado):
+    1) Adicao: x/+/y
+    1) Subtracao: x/_/y
+    1) Multiplicacao: x/*/y
+    1) Divisao: x/div/y
+    1) Potenciacao: x/^/y
+    1) Porcentagem: x/per/y
+    1) Raiz quadrada: r/x
 
 #### Servidor de operações básicas
 
